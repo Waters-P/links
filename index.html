@@ -7,36 +7,91 @@
     <title> 6 Cool Things </title>
 
     <style>
+
       body {
         padding-top: 40px;
         padding-bottom: 40px;
+        display: flex;
+        justify-content: center;
 
+        background-color: rgb(16, 54, 61);
+      }
+
+      .struct {
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column;
+        max-width: 800px;
+        gap: 30px;
+      }
+
+
+      .name {
+        color: #fffffe;
+        display: flex;
+        justify-content: center;
+      }
+
+      .Links {
+        background-color: #1b102f;
+        border: solid;
+        border-radius: 25px;
+        display: flex;
+        align-items: center;
+        
+        padding: 5px;
+        height: 80px;
+        
+      }
+
+      .Links a {
+        color: #cdf627;
+        text-decoration: none;
+        text-align: center;
+        flex-grow: 1;
+        
+      }
+
+      .theface  {
+        display: flex;
+        justify-content: center;
+      }
+
+      .socials a {
+        display: flex;
+        color: #fffffe;
+        justify-content: space-around;
       }
     </style>
 
     <style>
         .faceimg {
-          width: 128px;
-          height: 128px;
-          border-radius: 10px;
+          width: 118px;
+          height: 118px;
+          border-radius: 118px;
           object-fit: cover;
       }
     </style>
 
     <style>
       .icons {
-        width: 150px;
-        height: 150px;
-        border-radius: 150px;
+        width: 130px;
+        height: 90px;
+        border-radius: 25px;
+        position: relative;
+        right: 5px;
         object-fit: cover;
+        
       }
     </style>
   </head>
 
   <body>
+  <!-- -->
 
+  <div class = "struct">
     <!--  -->
-    <div class = "face recog">
+    <div class = "theface">
       <img class = "faceimg" src = "./icons/i&i.png" alt="boy laughing">
     </div>
     <!-- -->
@@ -74,11 +129,13 @@
     <!-- -->
 
     <div class = "Links">
-      <img class = "icons" width = 300 height = 200 src ="./icons/dpi.jpg" alt="discovery partners institute chicago">
+      <img class = "icons" width = 300 height = 200 src = "./icons/w3.png" alt = " htmL web validator ">
 
-      <a href = "https://dpi.uillinois.edu/"
-      target = "_blank"> Discovery Partners Institute, Chicago IL </a>
-    </div>
+      <a href = "https://validator.w3.org/#validate_by_input "
+      target = "_blank"> w3 HtmL Validator </a>
+
+    </div>  
+    
   
     <!-- -->
 
@@ -93,11 +150,10 @@
     <!-- -->
 
     <div class = "Links">
-      <img class = "icons" width = 300 height = 200 src = "./icons/w3.png" alt = " htmL web validator ">
+      <img class = "icons" width = 300 height = 200 src ="./icons/dpi.jpg" alt="discovery partners institute chicago">
 
-      <a href = "https://validator.w3.org/#validate_by_input "
-      target = "_blank"> w3 Validator </a>
-
+      <a href = "https://dpi.uillinois.edu/"
+      target = "_blank"> Discovery Partners Institute, Chicago IL </a>
     </div>
   
     <!-- -->
@@ -110,7 +166,9 @@
 
     </div>
   
-  
+    <!-- -->
+
+  </div>
   
   
   
